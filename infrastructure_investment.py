@@ -7,6 +7,18 @@ adding new production units or decommissioning old ones on the overall grid prod
 The simulation generates a visual report comparing the total production capacity under various
 investment scenarios.
 
+trategies:
+
+Status Quo: No changes to the current grid.
+
+Addition of New Units: Adding one or more new production units.
+
+Decommissioning of Old Units: Removing one or more (the smallest) units from the current grid.
+
+For each scenario, the simulation computes the new total production capacity. 
+A bar chart is generated to compare the different scenarios visually.
+ This report can support CapEx proposals and strategic planning initiatives.
+
 Usage:
     python infrastructure_investment.py
 """

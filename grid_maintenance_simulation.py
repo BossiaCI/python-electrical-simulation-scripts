@@ -7,6 +7,22 @@ by taking one or more production units offline. It then assesses the risk by com
 remaining production against a minimum required threshold. Finally, it visualizes the results
 to support maintenance planning and reduce the risk of unplanned outages.
 
+The script is organized into three parts:
+
+Simulation Tool:
+The simulator generates maintenance scenarios by computing the grid’s production when one or more nodes are offline. 
+In our example, we consider both single-unit outages (N‑1 scenarios) and selected double-outage combinations (N‑2 scenarios) 
+to mimic realistic maintenance scheduling.
+
+Risk Assessment:
+A decision function flags scenarios where the remaining production falls below a specified threshold (e.g., 80% of full production). 
+This helps identify high-risk maintenance plans that may impair grid performance.
+
+Outcome Visualization:
+The code visualizes simulation results with bar charts. 
+One chart displays production losses for each scenario (with scenario IDs described by the offline unit indices),
+and scenarios that fall below the threshold are highlighted.
+
 Usage:
     python grid_maintenance_simulation.py
 """

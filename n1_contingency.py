@@ -5,6 +5,15 @@ This script simulates the removal of each production node (N-1 analysis) in an e
 supports decision-making by flagging critical nodes based on a configurable threshold, and produces
 visualizations for both the simulation and the decision support outcome.
 
+Python script that implements an N‑1 contingency analysis for an electrical grid and then supports decision-making by ranking and 
+flagging nodes based on their impact on overall production. The script is divided into three main parts:
+
+Simulation: It computes the loss in production when each node is removed.
+
+Decision Support: It analyzes the simulation output to determine which nodes are critical (i.e. whose loss exceeds a configurable threshold).
+
+Outcome Visualization: It generates plots that show the simulation results and highlights the nodes requiring action.
+
 Usage:
     python n1_contingency.py
 """

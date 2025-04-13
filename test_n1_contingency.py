@@ -4,6 +4,10 @@ Test run for N-1 Contingency Analysis Simulation with Decision Support and Outco
 
 This script uses predefined test data to run our simulation code.
 It prints the simulation results and opens the figures to visualize the results.
+
+we use the production nodes data from our earlier script, then print the simulation results and generate the corresponding visualizations. 
+You can simply copy and run the following code 
+(which includes the full implementation along with the test run) to verify that everything works as expected.
 """
 
 import logging

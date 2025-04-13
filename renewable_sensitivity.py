@@ -11,6 +11,24 @@ The simulation also provides decision support by flagging scenarios where the to
 production falls below a specified threshold, and visualizes the results using scatter
 plots.
 
+The code is organized as follows:
+
+Simulation:
+The RenewableGridSimulator class accepts a dictionary of renewable sources with their maximum capacities. 
+It simulates multiple scenarios by generating weather multipliers (values between 0 and 1) 
+for each source and computes the total production for each scenario.
+
+Decision Support:
+A decision function identifies the scenarios where total production is below a predefined threshold 
+(for instance, 80% of the maximum theoretical production). These low‐production scenarios may require further investigation or mitigation strategies.
+
+Outcome Visualization:
+Two sets of plots are generated:
+
+A scatter plot of total production versus scenario index highlighting “at risk” scenarios.
+
+A set of scatter plots (one per renewable source) that show the relationship between that source’s weather multiplier and the total production.
+
 Usage:
     python renewable_sensitivity.py
 """
