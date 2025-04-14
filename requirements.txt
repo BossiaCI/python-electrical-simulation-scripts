@@ -4,3 +4,6 @@ networkx
 plotly
 matplotlib
 numpy
+pytest
+pytest-cov
+pandas
