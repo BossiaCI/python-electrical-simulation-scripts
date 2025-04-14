@@ -7,3 +7,5 @@ numpy
 pytest
 pytest-cov
 pandas
+hypothesis
+fastapi
